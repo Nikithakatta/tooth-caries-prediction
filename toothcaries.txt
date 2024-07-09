@@ -84,6 +84,14 @@ verbose = 1)
 result = model.evaluate(test_data_gen,batch_size=batch_size)
 print("test_loss, test accuracy",result)
 
+model_json = model.to_json()
+with open("/content/drive/MyDrive/DENTALDESIESE/res_dental_Classifier.json", "w") as json_file:
+  json_file.write(model_json)
+model.save("/content/drive/MyDrive/DENTALDESIESE/res_dental_Classifier.h5")
+print("Saved model to disk")
+model.save_weights("/content/drive/MyDrive/DENTALDESIESE/res_dental.h5")
+
+
 #STREAMLIT APPLICATION
 !pip install -q streamlit
 
