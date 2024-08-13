@@ -89,7 +89,8 @@ with open("/content/drive/MyDrive/DENTALDESIESE/res_dental_Classifier.json", "w"
   json_file.write(model_json)
 model.save("/content/drive/MyDrive/DENTALDESIESE/res_dental_Classifier.h5")
 print("Saved model to disk")
-model.save_weights("/content/drive/MyDrive/DENTALDESIESE/res_dental.h5")
+# Fix: Added '.weights' to the filename to meet the requirement of 'save_weights'
+model.save_weights("/content/drive/MyDrive/DENTALDESIESE/res_dental.weights.h5")
 
 
 #STREAMLIT APPLICATION
