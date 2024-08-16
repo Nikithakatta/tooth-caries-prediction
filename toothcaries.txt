@@ -22,7 +22,7 @@ valid_unhealthy_dir = '/content/drive/MyDrive/DENTALDESIESE/dataset/val/unhealth
 
 num_healthy_train = len(os.listdir(train_healthy_dir))
 num_unhealthy_train = len(os.listdir(train_unhealthy_dir))
-num_healthy_validaition = len(os.listdir(valid_healthy_dir))
+num_healthy_validation = len(os.listdir(valid_healthy_dir))
 num_unhealthy_validation= len(os.listdir(valid_unhealthy_dir))
 num_healthy_test = len(os.listdir(test_healthy_dir))
 num_unhealthy_test= len(os.listdir(test_unhealthy_dir))
